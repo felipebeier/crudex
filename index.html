@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exercicio CRUD</title>
-    <link rel="style.css">
+    <link rel="stylesheet" href="style.css">
     
 </head>
 <body>
@@ -12,18 +12,28 @@
 
     </header>
     <main>
-        <form id="cadastroForm">
-            <div class="input-group">
+        <form id="cadastroForm" class="cadastroForm">
+            <div class="label-group">
                 <label for="nome">Nome</label>
+            </div>
+            <div class="input-group">
                 <input type="text" id="nome" required>
             </div>
-            <div class="input-group">
+            <div class="label-group">
                 <label for="email">Email</label>
+            </div>
+            <div class="input-group">
                 <input type="email" id="email" required>
             </div>
-            <div buttons>
-                <button type="submit" id="btn-cadastrar">Cadastrar</button>
-                <button type="button" id="btn-limpar">Limpar</button>
+            <div class="btn-group">
+                <button type="submit" id="btn-cadastrar" class="btn-cadastrar">Cadastrar</button>                
+                <button type="button" id="btn-limpar" class="btn-limpar">Limpar</button>
+            </div>
+            <div class ="table-container">
+                <p> Nome teste - E-mail</p>
+                <p> Nome teste - E-mail</p>
+                <p> Nome teste - E-mail</p>
+                <p> Nome teste - E-mail</p>
             </div>
         </form>
 

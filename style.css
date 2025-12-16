@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding :0;
+    box-sizing:border-box;
+    font-family: Arial, san-serif;
+}
+html{
+    font-size:62.5%
+}
+:root{
+    --background-color:#4A70A9;
+    --secondary-color:#D7E7FF;
+    --white-color:#FFFEFF;
+    --black-color:#020202;
+    --btnCadastrar-color:#9DC49D;
+    --btnLimpar-color:#FF6565
+}
+body{
+    background-color:var(--background-color);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:2rem;
+}
+.cadastroForm {
+    width: 100%;
+    max-width: 100rem; /* Limite a largura do formulário */
+    border-radius: 0.8rem;
+    background-color: var(--secondary-color);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 30px
+}
+.cadastroForm input{
+    width: 34rem;
+    height: 4rem;
+    background-color: var(--white-color);
+    border-radius: 1rem;
+    margin: 0.5rem;
+}
+.cadastroForm label{
+    font-family: inter;
+    font-size:1.9rem;
+    font-weight: bold;
+}
+.cadastroForm button{
+    width: 12.4rem;
+    height: 4rem;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+.cadastroForm .btn-cadastrar{
+    background-color: var(--btnCadastrar-color);
+}
+.cadastroForm .btn-limpar{
+    background-color: var(--btnLimpar-color);
+}
+.cadastroForm .table-container{
+    background-color: var(--white-color);
+    margin-top: 2rem;
+    overflow-x: auto;
+    padding: 20px; 
+    border-radius: 10px;
+    font-size: 1.6rem;
+}
+.btn-group {
+    display: flex;          /* Ativa o modo flexbox */
+    justify-content: center; /* Alinha os botões horizontalmente ao centro */
+    gap: 2rem;              /* Cria um espaço entre os dois botões sem precisar de margin */
+    margin-top: 1rem;       /* Garante um respiro em relação aos inputs de cima */
+}
