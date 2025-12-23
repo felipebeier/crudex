@@ -43,7 +43,7 @@ body{
     font-size:1.9rem;
     font-weight: bold;
 }
-.cadastroForm button{
+button{
     width: 12.4rem;
     height: 4rem;
     border-radius: 15px;
@@ -60,7 +60,7 @@ body{
     width: 2rem;
     height: 2rem;;
 }
-.cadastroForm .table-container{
+.table-container{
     background-color: var(--white-color);
     margin-top: 2rem;
     overflow-x: auto;

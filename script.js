@@ -1,5 +1,5 @@
 // Seleciona o contêiner onde os dados serão exibidos - GET
-const BASE_URL = "https://crudcrud.com/api/6bc7b704050f409b96e3937e8ea88b97/cadastro";
+const BASE_URL = "https://crudcrud.com/api/24e01148e91249ac9b06b79da9f14d97/cadastro";
 const tableContainer = document.getElementById("table-container");
 
 fetch(BASE_URL)
@@ -19,7 +19,7 @@ fetch(BASE_URL)
     .catch(error => console.error("Erro ao buscar dados:", error));
 
 // Adicionar um novo usuario - POST
-document.getElementById("btn-cadastrar").addEventListener("click", (e) =>{
+document.getElementById("cadastroForm").addEventListener("submit", (e) =>{
     e.preventDefault(); // Evita o comportamento padrão do formulário
     const nome = document.getElementById("nome").value;
     const emailValue = document.getElementById("email").value;
@@ -30,7 +30,7 @@ document.getElementById("btn-cadastrar").addEventListener("click", (e) =>{
         body: JSON.stringify({
             nome: nome,
             "e-mail": emailValue
-            })  
+        })  
     })
     .then(response => response.json())
     .then((cadastro)=>{
@@ -38,6 +38,7 @@ document.getElementById("btn-cadastrar").addEventListener("click", (e) =>{
         p.innerHTML = `${cadastro.nome} - ${cadastro['e-mail']} <button onclick="deleteUser('${cadastro._id}')">X</button>`;
         tableContainer.appendChild(p);
     })
+    .catch(error => console.error("Erro ao cadastrar:", error));
 })
 //remover usuario - DELETE
 function deleteUser(id) {
