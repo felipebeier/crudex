@@ -55,6 +55,11 @@ body{
 .cadastroForm .btn-limpar{
     background-color: var(--btnLimpar-color);
 }
+.table-container button{
+    background-color: var(--btnLimpar-color);
+    width: 2rem;
+    height: 2rem;;
+}
 .cadastroForm .table-container{
     background-color: var(--white-color);
     margin-top: 2rem;
